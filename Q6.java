@@ -18,7 +18,7 @@ public class q6{
         
         String hex = decimalToHex(decimal);
         
-        // Handle the case where decimal is 0
+        // Handle the case where the decimal is 0
         if (hex.isEmpty()) {
             hex = "0";
         }
