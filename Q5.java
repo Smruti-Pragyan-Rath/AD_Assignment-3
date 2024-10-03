@@ -1,33 +1,24 @@
-public class q4 {
-    //objective write a reccursive program to find the sum of even digits in a number
-    public class EvenDigitSum {
+public class q5{
+    static int sumofdigits(String s1, int index){
+        if(index<0) return 0;
 
-        // Recursive function to find the sum of even digits in a number
-        public static int sumEvenDigits(int number) {
-            // Base case: when the number becomes 0, stop recursion
-            if (number == 0) {
-                return 0;
-            }
-
-            // Extract the last digit
-            int lastDigit = number % 10;
-
-            // Check if the digit is even
-            if (lastDigit % 2 == 0) {
-                return lastDigit + sumEvenDigits(number / 10); // Add the even digit and recurse
-            } else {
-                return sumEvenDigits(number / 10); // Skip the odd digit and recurse
-            }
-        }
-
-        public static void main(String[] args) {
-            int number = 482536;
-            int result = sumEvenDigits(number);
-            System.out.println("The sum of even digits in " + number + " is: " + result);
-        }
+        return (s1.CharAt(index)-'0') + sumofdigits(s1, index-1);
     }
 
+    static boolean isdivisible(String s1){
+        int sum=sumofdigits(s1, s1.length()-1);
 
+        if(sum%3==0) return true;
+        return false;
+    }
 
+     public static void main(String[] args) {
+        String num = "123456"; // Example input number as a string
 
+        if (isDivisibleBy3(num)) {
+            System.out.println(num + " is divisible by 3.");
+        } else {
+            System.out.println(num + " is not divisible by 3.");
+        }
+    }
 }
