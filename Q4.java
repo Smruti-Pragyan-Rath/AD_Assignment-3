@@ -1,6 +1,6 @@
 public class q4 {
     //objective write a reccursive program to find the sum of even digits in a number
-    public class EvenDigitSum {
+   
 
         // Recursive function to find the sum of even digits in a number
         public static int sumEvenDigits(int number) {
@@ -25,7 +25,7 @@ public class q4 {
             int result = sumEvenDigits(number);
             System.out.println("The sum of even digits in " + number + " is: " + result);
         }
-    }
+    
 
 
 
