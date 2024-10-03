@@ -11,3 +11,5 @@ Q3-> To find out if the number is a prime number or not using recursion
 Q4-> Write a recursive program to find the sum of even digits in a number
 
 Q5-> Given a Number as a String write a recursive program to check if the number is divisible by 3 or not 
+
+Q6-> Given a decimal number write a code to find its hexaDecimal Equivalent
