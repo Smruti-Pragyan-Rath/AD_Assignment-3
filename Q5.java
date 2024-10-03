@@ -1,4 +1,5 @@
 public class q5{
+//objective- Given a number as a String write a recursive function to check if the number is divisible by 3 or not.
     static int sumofdigits(String s1, int index){
         if(index<0) return 0;
 
@@ -16,9 +17,9 @@ public class q5{
         String num = "123456"; // Example input number as a string
 
         if (isDivisibleBy3(num)) {
-            System.out.println(num + " is divisible by 3.");
+            System.out.println(" is divisible by 3.");
         } else {
-            System.out.println(num + " is not divisible by 3.");
+            System.out.println( " is not divisible by 3.);
         }
     }
 }
